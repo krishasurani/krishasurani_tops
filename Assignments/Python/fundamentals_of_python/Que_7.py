@@ -1,19 +1,7 @@
-# •	Write a Python program to find whether a given number is even or odd, print out an appropriate message to the user.
+#Write a Python program to find whether a given number is even or odd,print out an appropriate message to the user.
 
-while True:
-    try:
-        number = int(input("Enter a number: "))
-        if number % 2 == 0:
-            print(f"{number} is an Even number!")
-        else:
-            print(f"{number} is an Odd number!")
-        
-        more_check = input("Do you want to check another number? (y/n): ").lower()
-        if more_check != 'y':
-            print("Exiting the program.")
-            break
-        
-    except ValueError:
-        print("Please enter a valid number!")
-
-
+number=int(input("Enter a Number:"))
+if number % 2 == 0:
+    print("The number is Even ")
+else:
+    print("The number is odd")
