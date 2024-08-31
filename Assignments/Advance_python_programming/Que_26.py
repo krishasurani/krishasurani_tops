@@ -34,7 +34,7 @@
 # class Employee(Person):
 #     pass
 
-# obj = Employee('priyank',11)
+# obj = Employee('krisha',13)
 # obj.display()
 
 
