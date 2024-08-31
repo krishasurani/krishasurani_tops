@@ -1,9 +1,0 @@
-OOPs concept
--> Class and object
--> Attributes
--> Inheritance
--> Encapsulation
--> Abstraction / Data hiding
--> Polymorphism
--> Overloading
--> Overriding
