@@ -1,2 +1,0 @@
-python is object oriented programming language
-python is interpreted programming language
