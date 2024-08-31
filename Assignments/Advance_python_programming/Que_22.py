@@ -17,7 +17,7 @@ class person:
     def per_info(self):
         return f"Hello {self.name} your age is {self.age}"
 
-per1 = person("priyank",99)
+per1 = person("krisha",13)
 print(per1.per_info())
 
 
