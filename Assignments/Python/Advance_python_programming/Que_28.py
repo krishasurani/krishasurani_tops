@@ -1,21 +1,23 @@
-# •	What relationship is appropriate for Course and Faculty? 
+# •	What is used to check whether an object o is an instance of class A? 
 
-'''
-Has a relationship (composition)
-->This implies that a Course class would contain an instance of a Faculty class.
-'''
+class Car:
+    def __init__(self,model):
+        self.model = model
 
-class Faculty:
-    def __init__(self, name):
-        self.name = name
+class Bike:
+    def __init__(self,model):
+        self.model = model
+    
+car1 = Car('Honda')
+print(car1.model)
+print(isinstance(car1,Car))
+# if type(car1) == Car:
+#     print('Car1 is an instance of Car')
+# else:
+#     print('Car1 is not an instance of Car')
 
-class Course:
-    def __init__(self, name, faculty):
-        self.name = name
-        self.faculty = faculty
 
-math_professor = Faculty("krisha")
-math_course = Course("Mathematics", math_professor)
 
-print(math_course.name)       
-print(math_course.faculty.name)  
+bike1 = Bike('Yamaha')
+print(bike1.model)
+print(isinstance(bike1,Car))

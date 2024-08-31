@@ -1,24 +1,21 @@
-# •	What relationship is appropriate for Student and Person? 
+# •	What relationship is appropriate for Course and Faculty? 
 
 '''
-IS a relationship 
--> student is a person
--> student class can inherit from a person class 
+Has a relationship (composition)
+->This implies that a Course class would contain an instance of a Faculty class.
 '''
 
-
-class Person:
-    def __init__(self,name,age):
+class Faculty:
+    def __init__(self, name):
         self.name = name
-        self.age = age
 
-class Student(Person):
-    def __init__(self,name,age,id):
-        super().__init__(name,age)
-        self.id = id
+class Course:
+    def __init__(self, name, faculty):
+        self.name = name
+        self.faculty = faculty
 
-per = Person('krisha',16)
-stu = Student('kruti',20,9850)
+math_professor = Faculty("krisha")
+math_course = Course("Mathematics", math_professor)
 
-print(per.name,per.age)
-print(stu.name,stu.age,stu.id)
+print(math_course.name)       
+print(math_course.faculty.name)  
